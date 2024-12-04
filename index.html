@@ -11,8 +11,42 @@
      
     <div class="container mt-5">
         <div>
-             <span></span>
+            <!-- Contador de Tareas Completadas -->
+            <div class="text-center mb-4">
+                <span class="badge bg-primary" id="contador-tareas-completadas">
+                     0 Tareas Completadas 
+                </span>
+            </div>
+            <!-- Contador de Tareas Pendientes -->
+             <div class="text-center mb-4">
+               <span class="badge bg-success" id="contador-tareas-completadas">
+                 0 Tareas Pendientes
+               </span>
+             </div>            
+
         </div>
+        <!-- Categorias -->
+         <div class="mb-3">
+            <label for="categoria-select" class="form-label">Categoria:</label>
+            <select id="categoria-select" class="form-select">
+               <option value="Personal">Personal</option>
+               <option value="Trabajo">Trabajo</option>
+               <option value="Estudios">Estudios</option>
+            </select>
+         </div>
+         <!-- Agregar Tarea -->
+          <div class="input-group">
+            <input type="text" id="tarea-input" class="form-control" placeholder="Escribe tu Tarea ...">
+            <button id="agregar-tarea" class="btn btn-primary">Agregar</button>
+          </div>
+          <ul class="list-group" id="lista-tareas">
+              <!-- Undorder List -->
+               <!-- Aqui se agregaran las tareas -->
+                <li class="">
+
+                </li>
+          </ul>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
